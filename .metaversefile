@@ -1,8 +1,7 @@
 {
-  "name": "silsword",
-  "description": "silsword",
+  "name": "lightsaber",
   "start_url": "index.js",
-  "description": "A sword of immense power, imbued with the Rose of the Basilisk. It transform into any shape needed. In exchange, the owner is cursed to go up the street.",
+  "description": "An elegant energy weapon from a more civilized age.",
   "components": [
     {
       "key": "physics",
@@ -15,7 +14,7 @@
     {
       "key": "aim",
       "value": {
-        "appAnimation": "Sword_Activate",
+        "appAnimation": "Sword_Idle",
         "playerAnimation": "swordSideIdle",
         "boneAttachment": "leftHand",
         "position": [-0.055, -0.01, -0.18],
@@ -26,9 +25,9 @@
     {
       "key": "wear",
       "value": {
-        "boneAttachment": "spine",
-        "position": [-0.3, 0.7, -0.15],
-        "quaternion": [0, 0, 0.9510565162951536, -0.30901699437494734]
+        "boneAttachment": "leftUpperLeg",
+        "position": [-0.1, 0.0, -0.0],
+        "quaternion": [1, 0, 0.0, 0.0]
       }
     },
     {
@@ -42,10 +41,6 @@
         ],
         "behavior": "sword",
         "boneAttachment": "leftHand",
-        "trail": [
-          [0, 0.2, 0],
-          [0, 1.4, 0]
-        ],
         "position": [-0.055, -0.01, -0.18],
         "quaternion": [0.7071067811865475, 0, 0, 0.7071067811865476],
         "scale": [1, 1, 1]
